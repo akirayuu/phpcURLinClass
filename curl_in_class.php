@@ -1,11 +1,5 @@
 <?php
-include_once("curl_in_class.php");
-
-$obj = new ListofStudent();
-
-?>
-
-<?php
+include_once ("call_classobj.php");
 
 /* Create class name ListofStudent */
 class ListofStudent {
