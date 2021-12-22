@@ -8,6 +8,7 @@ class ListofStudent {
        
     /* Create contructor */
     function __contruct(){
+        die('in');
         /* contructor */
         $this->url = 'https://reqres.in/api/users?page=2';
 
@@ -24,7 +25,7 @@ class ListofStudent {
         echo $e;
     }
     else {
-        $decode = json_decode($resp);
+        $decode = json_decode($resp,1); //set as true
         print_r($decode);
        }
     }
