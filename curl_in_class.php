@@ -1,4 +1,11 @@
 <?php
+include_once("curl_in_class.php");
+
+$obj = new ListofStudent();
+
+?>
+
+<?php
 
 /* Create class name ListofStudent */
 class ListofStudent {
@@ -6,10 +13,10 @@ class ListofStudent {
     private $student;
     private $url;
        
-    /* Create contructor */
-    function __contruct(){
+    /* Create constructor */
+    function __construct(){
         die('in');
-        /* contructor */
+        /* constructor */
         $this->url = 'https://reqres.in/api/users?page=2';
 
         /* Initialize cURL object with handle */
