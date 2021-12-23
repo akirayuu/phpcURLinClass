@@ -10,7 +10,7 @@ class ListofStudent {
     function __construct(){
         /* contructor */
 		$this->url = 'https://reqres.in/api/users?page=2';
-		//$this->url = 'http://localhost:8080/tini/sample_data1.php';
+		//$this->url = 'http://localhost:8080/GitHub/phpcURLinClass/sample_data1.php'; //to read from local host
 		
 		/* Initialize cURL object with handle */
 		$this->student = curl_init();
